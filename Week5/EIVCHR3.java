@@ -11,11 +11,12 @@ public class EIVCHR3 {
         for (int i = 0; i < matHang; i++) {
             giaTri[i] = sc.nextLong();
         }
+        int maxDiscounts = 50000;
         Arrays.sort(giaTri);
         for (int i = 1; i <= soVChrs && i <= matHang; i++) {
             long totalDiscount = (long) (giaTri[matHang - i] * 0.3);
-            if (totalDiscount > 50000) {
-                giaTri[matHang - i] = giaTri[matHang - i] - 50000;
+            if (totalDiscount > maxDiscounts) {
+                giaTri[matHang - i] = giaTri[matHang - i] - maxDiscounts;
             } else {
                 giaTri[matHang - i] = giaTri[matHang - i] - totalDiscount;
             }
