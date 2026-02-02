@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "src",
+        "Week5",
         "Week4",
-        "Week5"
+        "Week6"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
